@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
 import pickle
+from jinja2 import Markup
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
